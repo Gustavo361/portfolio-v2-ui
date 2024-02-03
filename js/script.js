@@ -38,7 +38,7 @@ dataMenuMobileContact.addEventListener('click', () => {
     closeMenuFullScreen()
 })
 
-fetch('http://localhost:3000')
+fetch('https://portfolio-v2-server.onrender.com/')
     .then(response => response.text())
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
@@ -46,7 +46,7 @@ fetch('http://localhost:3000')
 contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    fetch('http://localhost:3000/enviar-email', {
+    fetch('https://portfolio-v2-server.onrender.com/enviar-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -61,11 +61,9 @@ contactForm.addEventListener('submit', function (event) {
         .then(data => {
             console.log(data);
             if (data.success) {
-                // Se o envio for bem-sucedido, redirecione para a página de agradecimento
                 window.location.href = 'thank-you.html';
             } else {
-                window.alert('erro tente novamente')
-                // Adicione lógica para lidar com falha no envio, se necessário
+                window.alert('Erro. Tente novamente')
             }
         })
         .catch(error => console.error('Error:', error));
