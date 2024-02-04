@@ -13,6 +13,7 @@ dataMenuOpenBtn.addEventListener('click', () => {
     dataMenuCloseBtn.classList.add('active')
 
     menuFullScreen.classList.add('active')
+    document.documentElement.style.overflow = 'hidden';
 })
 
 dataMenuCloseBtn.addEventListener('click', () => {
@@ -20,12 +21,14 @@ dataMenuCloseBtn.addEventListener('click', () => {
     dataMenuOpenBtn.classList.add('active')
 
     menuFullScreen.classList.remove('active')
+    document.documentElement.style.overflow = 'auto';
 })
 
 function closeMenuFullScreen() {
     dataMenuOpenBtn.classList.add('active')
     dataMenuCloseBtn.classList.remove('active')
     menuFullScreen.classList.remove('active')
+    document.documentElement.style.overflow = 'auto';
 }
 
 dataMenuMobileProjs.addEventListener('click', () => {

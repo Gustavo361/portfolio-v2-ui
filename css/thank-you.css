@@ -38,7 +38,6 @@ footer {
     height: 18dvh;
 }
 
-
 @media only screen and (min-width: 1024px) {
     header div#header-content {
         margin-bottom: 0;
