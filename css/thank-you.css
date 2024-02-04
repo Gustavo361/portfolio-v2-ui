@@ -15,7 +15,7 @@ header div#header-content h1 {
 
 header div#header-content span {
     margin-top: 0.5%;
-    margin-bottom: 1%;
+    margin-bottom: 7%;
 }
 
 header div#header-content button {
@@ -43,6 +43,11 @@ footer {
     header div#header-content {
         margin-bottom: 0;
         padding-bottom: 2%;
+    }
+
+    header div#header-content span {
+        margin-top: 0.5%;
+        margin-bottom: 1.4%;
     }
 
 }
