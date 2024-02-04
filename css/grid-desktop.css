@@ -25,16 +25,11 @@
             "mb3 dsk5 dsk5 dsk5 mb2"
             "mb3 dsk5 dsk5 dsk5 mb2"
             "mb3 dsk5 dsk5 dsk5 mb2";
-
-        /* padding: 5%; */
         height: 100vh;
-        /* background-color: red; */
         position: relative;
-
     }
 
     .grid-item {
-        /* border: 1px solid black; */
         border-radius: 12px;
         cursor: pointer;
         border-radius: 26px;
@@ -49,7 +44,6 @@
 
     .dsk1 {
         grid-area: dsk1;
-
         background: url('../images/ip-tracker.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -62,7 +56,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
-
     }
 
     .mb2 {
@@ -76,7 +69,6 @@
     .mb1 {
         grid-area: mb1;
         background: url('../images/workit-mobile.jpg');
-        /* */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -109,11 +101,9 @@
     .dsk5 {
         grid-area: dsk5;
         background: url('../images/newsletter-sign-up-form-with-success-message-desktop.jpg');
-        /* */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
         position: relative;
     }
 }

@@ -29,15 +29,10 @@ header div#header-content button ion-icon {
 }
 
 header div#header-content button a {
-    /* width: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* header div#header-content button:hover {
-    background-color: green;
-} */
 
 footer {
     height: 18dvh;

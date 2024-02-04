@@ -16,13 +16,15 @@ dataMenuOpenBtn.addEventListener('click', () => {
 })
 
 dataMenuCloseBtn.addEventListener('click', () => {
-    dataMenuOpenBtn.classList.add('active')
     dataMenuCloseBtn.classList.remove('active')
+    dataMenuOpenBtn.classList.add('active')
 
     menuFullScreen.classList.remove('active')
 })
 
 function closeMenuFullScreen() {
+    dataMenuOpenBtn.classList.add('active')
+    dataMenuCloseBtn.classList.remove('active')
     menuFullScreen.classList.remove('active')
 }
 
@@ -63,7 +65,7 @@ contactForm.addEventListener('submit', function (event) {
             if (data.success) {
                 window.location.href = 'thank-you.html';
             } else {
-                window.alert('Erro. Tente novamente')
+                window.alert(data.error)
             }
         })
         .catch(error => console.error('Error:', error));
